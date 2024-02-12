@@ -22,7 +22,7 @@ def handle_s3_event(event):
     #Try block for S3 management
     try: 
         response = s3.get_object(Bucket=bucket, Key=key) #Get object from S3 Bucket
-        print("CONTENT TYPE: " + response['ContentType'])
+        print("CONTENT TYPE: " + response['ContentType']) #Print content type for test
         
         send_to_load_balancer(response) # Send object to load balancer function
     #If and error occours during object extraction
