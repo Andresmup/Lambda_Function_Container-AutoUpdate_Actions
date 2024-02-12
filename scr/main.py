@@ -12,7 +12,7 @@ load_balancer_url = f'http://{api_host}/api/events' #Define URL for load balance
 
 #Principal function
 def lambda_handler(event, context):
-    handle_s3_event(event) #Handle S3 event
+    handle_s3_event(event) #Handle S3 event and run
 
 def handle_s3_event(event):
     #Extract event info, to get bucket S3 name and object key 
