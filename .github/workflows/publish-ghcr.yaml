@@ -12,4 +12,4 @@ jobs:
         run: |
           docker login --username Andresmup --password ${{ secrets.GH_TOKEN}} ghcr.io
           docker build . -t ghcr.io/andresmup/lambda-s3-alb-container:latest
-          docker push  ghcr.io/andresmup/lambda-s3-alb-container:latest
+          cd docker push  ghcr.io/andresmup/lambda-s3-alb-container:latest
