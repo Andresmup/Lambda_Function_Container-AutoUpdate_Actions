@@ -3,6 +3,8 @@
 Este repositorio es un showcase sobre cómo crear una función lambda de aws, que en este caso detecta los objetos creados en un datalake S3 y los envía a un Load Balancer por HTTP.
 Cada vez que se realiza un cambio en el código el container se actualiza automáticamente gracias a github actions.
 
+![schema](images/aws-lambda-s3-alb-light.png)
+
 ## ➡️​ CREACIÓN FUNCIÓN LAMBDA
 
 En este caso la función lambda que se desarrolla responde a una necesidad de detectar los objectos creados en un Datalake S3 de AWS
